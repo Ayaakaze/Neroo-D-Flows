@@ -1,54 +1,39 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neroo D Flows - Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neroo D Flows | Digital Services</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <div class="nav-dots" onclick="toggleSidebar()">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
+  <nav class="navbar">
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="produk.html">Produk/Jasa</a></li>
+      <li><a href="sosmed.html">Sosial Media</a></li>
+      <li><a href="testimoni.html">Testimoni</a></li>
+      <li><a href="donasi.html">Donasi</a></li>
+    </ul>
+  </nav>
 
-    <nav class="sidebar">
-        <a href="index.html">Home</a>
-        <a href="products.html">Produk/Jasa</a>
-        <a href="social.html">Sosial Media</a>
-        <a href="testimoni.html">Testimoni</a>
-        <a href="donasi.html">Donasi</a>
-    </nav>
-
-    <div class="page-content">
-        <div class="hero">
-            <h1 class="nebula-title">Neroo D Flows</h1>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Pengembangan Website</h3>
-                    <p>Solusi lengkap pembuatan website profesional</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-robot"></i>
-                    <h3>Bot WhatsApp/Telegram</h3>
-                    <p>Automasi bisnis dengan teknologi canggih</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Konsultasi Software</h3>
-                    <p>Solusi kebutuhan software bisnis Anda</p>
-                </div>
-            </div>
-        </div>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Selamat Datang di Dunia Neroo D Flows</h1>
+      <p>Saya Neroo D Flows, penyedia jasa digital seperti pembuatan website, template, dan pengembangan perangkat lunak sesuai kebutuhan Anda!</p>
     </div>
+  </section>
 
-    <script>
-        function toggleSidebar() {
-            document.querySelector('.sidebar').classList.toggle('active');
-        }
-    </script>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
