@@ -1,224 +1,79 @@
 /* General Reset and Styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #000428, #004e92); /* Nebula-like gradient */
-  color: #fff;
-  overflow-x: hidden;
-}
+{ margin: 0; padding: 0; box-sizing: border-box; }
 
-h1, h2, p {
-  margin: 20px 0;
-}
 
-a {
-  color: #fff;
-  text-decoration: none;
-}
+body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #000428, #004e92); color: #fff; overflow-x: hidden; }
 
-ul {
-  list-style-type: none;
-}
+h1, h2, p { margin: 20px 0; }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px 20px;
-  z-index: 1000;
-}
+a { color: #fff; text-decoration: none; }
 
-.navbar .menu-toggle {
-  display: none;
-  cursor: pointer;
-}
+ul { list-style-type: none; }
 
-.navbar .menu-toggle .bar {
-  width: 25px;
-  height: 3px;
-  margin: 5px;
-  background-color: #fff;
-}
+nav { position: fixed; top: 0; left: 0; width: 100%; background: rgba(0, 0, 0, 0.7); padding: 10px 20px; z-index: 1000; }
 
-.nav-links {
-  display: flex;
-  justify-content: flex-end;
-}
+.navbar .menu-toggle { display: none; cursor: pointer; }
 
-.nav-links li {
-  margin: 0 15px;
-}
+.navbar .menu-toggle .bar { width: 25px; height: 3px; margin: 5px; background-color: #fff; }
 
-.nav-links a {
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
+.nav-links { display: flex; justify-content: flex-end; }
 
-.nav-links a:hover {
-  color: #f39c12;
-}
+.nav-links li { margin: 0 15px; }
 
-.nav-links.active {
-  display: block;
-  position: absolute;
-  top: 60px;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 20px;
-  width: 200px;
-}
+.nav-links a { font-size: 18px; transition: color 0.3s ease; }
 
-/* Hero Section */
-.hero {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: url('https://source.unsplash.com/1600x900/?nebula') no-repeat center center/cover;
-  animation: fadeIn 2s ease-out;
-}
+.nav-links a:hover { color: #f39c12; }
 
-.hero-content h1 {
-  font-size: 48px;
-  animation: slideUp 1.5s ease-out;
-}
+.nav-links.active { display: block; position: absolute; top: 60px; right: 0; background-color: rgba(0, 0, 0, 0.9); padding: 20px; width: 200px; }
 
-.hero-content p {
-  font-size: 20px;
-  animation: fadeIn 3s ease-out;
-}
+/* Hero Section */ .hero { height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center; background-image: url('https://source.unsplash.com/1600x900/?nebula'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed; animation: fadeIn 2s ease-out; }
 
-/* Produk Section */
-.produk-section {
-  padding: 50px 20px;
-  text-align: center;
-}
+.hero-content h1 { font-size: 48px; animation: slideUp 1.5s ease-out; }
 
-.produk-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 30px;
-}
+.hero-content p { font-size: 20px; animation: fadeIn 3s ease-out; }
 
-.produk-item {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-}
+/* Produk Section */ .produk-section { padding: 50px 20px; text-align: center; }
 
-.produk-item:hover {
-  transform: scale(1.05);
-}
+.produk-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px; }
 
-.produk-item h2 {
-  font-size: 22px;
-}
+.produk-item { background-color: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); transition: transform 0.3s ease; }
 
-.produk-item .price {
-  font-size: 20px;
-  color: #f39c12;
-}
+.produk-item:hover { transform: scale(1.05); }
 
-/* Sosial Media Section */
-.sosmed-section {
-  padding: 50px 20px;
-  text-align: center;
-}
+.produk-item h2 { font-size: 22px; }
 
-.sosmed-list {
-  font-size: 20px;
-}
+.produk-item .price { font-size: 20px; color: #f39c12; }
 
-.sosmed-list li {
-  margin: 10px 0;
-}
+/* Sosial Media Section */ .sosmed-section { padding: 50px 20px; text-align: center; }
 
-/* Testimoni Section */
-.testimoni-section {
-  padding: 50px 20px;
-  text-align: center;
-}
+.sosmed-list { font-size: 20px; }
 
-.testimoni-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-}
+.sosmed-list li { margin: 10px 0; }
 
-.testimoni-item {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
+/* Testimoni Section */ .testimoni-section { padding: 50px 20px; text-align: center; }
 
-.testimoni-text {
-  font-size: 18px;
-}
+.testimoni-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
 
-.testimoni-name {
-  font-size: 16px;
-  font-style: italic;
-}
+.testimoni-item { background-color: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
 
-/* Donasi Section */
-.donasi-section {
-  padding: 50px 20px;
-  text-align: center;
-}
+.testimoni-text { font-size: 18px; }
 
-.donasi-info {
-  font-size: 20px;
-  margin-top: 20px;
-}
+.testimoni-name { font-size: 16px; font-style: italic; }
 
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+/* Donasi Section */ .donasi-section { padding: 50px 20px; text-align: center; }
 
-@keyframes slideUp {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+.donasi-info { font-size: 20px; margin-top: 20px; }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.9);
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-  }
+/* Animations */ @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-  .menu-toggle {
-    display: block;
-  }
+@keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 
-  .produk-list {
-    grid-template-columns: 1fr;
-  }
-}
+/* Mobile Responsiveness */ @media (max-width: 768px) { .nav-links { display: none; flex-direction: column; background-color: rgba(0, 0, 0, 0.9); width: 100%; text-align: center; padding: 20px; }
+
+.nav-links.active { display: flex; }
+
+.menu-toggle { display: block; position: absolute; top: 15px; left: 20px; z-index: 1001; }
+
+.produk-list { grid-template-columns: 1fr; } }
+
