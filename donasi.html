@@ -1,30 +1,35 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
-        <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neroo D Flows - Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donasi | Neroo D Flows</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    
-    <div class="page-content">
-        <h2 class="section-title">Dukung Kami</h2>
-        <div class="donation-methods">
-            <div class="method-card">
-                <i class="fas fa-wallet"></i>
-                <h4>Dompet Digital</h4>
-                <p>0822-XXXX-XXXX (DANA/OVO)</p>
-            </div>
-            <div class="method-card">
-                <i class="fab fa-paypal"></i>
-                <h4>PayPal</h4>
-                <p>paypal.me/yourlink</p>
-            </div>
-        </div>
+  <nav class="navbar">
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
-</body>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="produk.html">Produk/Jasa</a></li>
+      <li><a href="sosmed.html">Sosial Media</a></li>
+      <li><a href="testimoni.html">Testimoni</a></li>
+      <li><a href="donasi.html">Donasi</a></li>
+    </ul>
+  </nav>  <section class="donasi-section">
+    <h1>Dukung Karya Neroo D Flows</h1>
+    <p>Jika kamu suka dengan karya dan layanan yang saya buat, kamu bisa memberikan dukungan melalui donasi. Terima kasih!</p>
+    <div class="donasi-info">
+      <p><strong>Link Donasi / Metode Pembayaran:</strong></p>
+      <p>(nanti kuisi)</p>
+    </div>
+  </section>  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script></body>
 </html>
